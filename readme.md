@@ -9,3 +9,4 @@ create an issue with the quote, book name, and author
 2. save quote with following this template: quote_[quote_number].html
 # To add to your website:
 <iframe src="https://randomfunnyquotes.github.io/" sandbox="allow-scripts"></iframe>
+## help needed replacing the odd charactors(�) with ',", or ,
