@@ -9,7 +9,7 @@
         var deleted = new XMLHttpRequest();
         deleted.open('GET', "deleted_quotes.txt", false);
         deleted.send();
-        var deleted_quotes = deleted.responseText.split(',');
+        var deleted_quotes = deleted.responseText.split(', ');
         for (num in deleted_quotes){
             var d_num=deleted_quotes[num]
             if (d_num==rand_num){
