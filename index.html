@@ -1,9 +1,9 @@
 <html><body>
+    <noscript>
+        You <i>need</i> javascript enabled<p>otherwise no funny quotes</p>
+    </noscript>
     <p id='body'></p>
 <script>
-    
-    var newsfile;
-    newsfile = new XMLHttpRequest();
     function get_num(){
         var rand_num = (Math.floor(Math.random() * 1154) + 1).toString();
         var deleted = new XMLHttpRequest();
@@ -20,21 +20,12 @@
         return rand_num;
     }
     var rand = get_num();
+    
+    var newsfile;
+    newsfile = new XMLHttpRequest();
     newsfile.open('GET', "Quotes/quote_"+rand+".html", false);
     newsfile.send();
     
-    var s = newsfile.responseText;
-    document.getElementById("body").innerHTML = s;
-   /*
-    var newsfile;
-    newsfile = new XMLHttpRequest();
-    newsfile.open('GET', "quotes.txt", false);
-    newsfile.send();
-    var splitted;
-    splitted = newsfile.responceText.split('=');
-    var output;
-    output = "<p>"+splitted[0]+"</p><p>"+splitted[1]+"<p></p>"+splitted[2]+"</p>";
-    document.getElementById("news").innerHTML = output;
-     */
+    document.getElementById("body").innerHTML = newsfile.responseText;
     </script>
 </body></html>
