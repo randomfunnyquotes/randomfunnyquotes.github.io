@@ -28,7 +28,14 @@
     
     document.getElementById("body").innerHTML = newsfile.responseText;
     </script>
-
+    <script>
+        function copyText() {
+      
+            /* Copy text into clipboard */
+            navigator.clipboard.writeText
+                (document.getElementById("body").innerHTML.replace('<p>','\n'));
+        }
+    </script>
 
 
 </body>
