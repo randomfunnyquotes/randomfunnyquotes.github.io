@@ -34,7 +34,7 @@
       
             /* Copy text into clipboard */
             navigator.clipboard.writeText
-                (document.getElementById("body").innerHTML.replace('<p>','\n'));
+                (document.getElementById("body").innerHTML.replace('<p>','\n').replace('</p>',' ').replace("<p id='content'>",'\n').replace("<it id='author_book'><i>",'\n').replace('</i></it>','\n'));
         }
     </script>
 
