@@ -31,10 +31,14 @@
     </script>
     <script>
         function copyText() {
-      
+            var text = document.getElementById("body").innerHTML.replace('<p>','\n')
+            var _text = text.replace('</p>',' ')
+            text =_text.replace("<p id='content'>",'\n')
+            _text = text.replace("<it id='author_book'><i>",'\n')
+            text = _text.replace('</i></it>','\n')
             /* Copy text into clipboard */
             navigator.clipboard.writeText
-                (document.getElementById("body").innerHTML.replace('<p>','\n').replace('</p>',' ').replace("<p id='content'>",'\n').replace("<it id='author_book'><i>",'\n').replace('</i></it>','\n'));
+                (text);
         }
     </script>
 
