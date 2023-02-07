@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: randomfunnyquotes.github.io
+Token: 94b8584bb5018e33f634a74e0c4a697e2cbfd28e16aead599674c1e8f5b2e030
