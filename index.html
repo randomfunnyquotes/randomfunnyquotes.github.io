@@ -32,7 +32,7 @@
     <script>
         function copyText() {
             var content = document.getElementById("contents").innerHTML
-            var author = document.getElementById("author_book").innerHTML
+            var author = document.getElementById("author_book").innerText
             /* Copy text into clipboard */
             var text = content+"\n  "+author
             navigator.clipboard.writeText
