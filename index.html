@@ -31,11 +31,10 @@
     </script>
     <script>
         function copyText() {
-            var content = document.getElementById("contents")
-            var author = document.getElementById("author_book")
-            
-            var text = content+"\n  "+author
+            var content = document.getElementById("contents").innerHTML
+            var author = document.getElementById("author_book").innerHTML
             /* Copy text into clipboard */
+            var text = content+"\n  "+author
             navigator.clipboard.writeText
                 (text);
         }
